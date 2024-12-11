@@ -1,11 +1,11 @@
 @font-face {
-    font-family: "BebasNeue";
-    /*src: url(personal-portfolio/fonts/BebasNeue-Regular.ttf);*/
-    src: url(/fonts/BebasNeue-Regular.ttf);
+    font-family: "ObjectSans-Regular";
+    src: url(/fonts/ObjectSans-Regular.otf);
 }
 
+
 body {
-    font-family: Georgia;
+    font-family: "ObjectSans-Regular";
     background-color: #F3F4F2;
 }
 
@@ -14,7 +14,7 @@ body {
 }
 
 .navbar {
-    font-family: "BebasNeue";
+    font-family: mrs-eaves, serif;
     letter-spacing: 1px;
 }
 
@@ -23,10 +23,10 @@ body {
 }
 
 .navbar-brand {
-    font-family: "BebasNeue";
+    font-family: mrs-eaves, serif;
     letter-spacing: 4px;
-    font-size: 30px;
-    color: #3D3D3C;
+    font-size: 2.25rem;
+    color: #000;
 }
 
 .navbar-brand:hover{
@@ -90,6 +90,7 @@ body {
 
 .card:hover {
     filter: brightness(90%);
+    transition: all 200ms ease;
 }
 
 .card-title {
