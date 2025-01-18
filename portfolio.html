@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
     <head>
         <base href="/"/>
 
@@ -27,17 +27,23 @@
             <nav class="navbar navbar-light">
                 <div class="container-fluid">
                     <a class="navbar-brand" href="">Will McAllister</a>
-                <ul class="nav nav-underline justify-content-end">
-                    <li class="nav-item">
-                    <a class="nav-link" href="">Home</a>
-                    </li>
-                    <li class="nav-item">
-                    <a class="nav-link active" href="portfolio">Portfolio</a>
-                    </li>
-                    <li class="nav-item">
-                    <a class="nav-link" href="resume">Resume</a>
-                    </li>
-                </ul>
+                    <ul class="nav nav-underline justify-content-end">
+                        <li class="nav-item">
+                            <a class="nav-link" href="">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="portfolio">Portfolio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="resume">Resume</a>
+                        </li>
+                        <button
+                            type="button"
+                            data-theme-toggle
+                            aria-label="Change light/dark theme"
+                            ><img class="theme-selector" src="/icons/moon.svg"></i>
+                        </button>
+                    </ul>
                 </div>
             </nav>
         </div>
@@ -151,6 +157,34 @@
 
                 <div class="project-item col-xl-3 col-lg-4 col-md-6 col-sm-8 col-12">
                     <div class="card">
+                        <img src="img/thumbnails/cip-dashboard-thumb.png" class="card-img-top" 
+                            alt="capital improvement project dashboard thumbnail">
+                        <div class="card-map-type">Interactive | ArcGIS Dashboard</div>
+                        <div class="card-body">
+                            <h5 class="card-title">Capital Improvement Projects Dashboard</h5>
+                            <p class="card-text">Rebuilt the City's CIP Dashboard to display taxpayer funded city projects.</p>
+                            <p class="card-attribution mb-0">For the City of Columbia, MO</p>
+                            <a href="https://gocolumbiamo.maps.arcgis.com/apps/dashboards/0b35cbd9cfa7478bbe8ae7672bce7add" class="stretched-link"></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-item col-xl-3 col-lg-4 col-md-6 col-sm-8 col-12">
+                    <div class="card">
+                        <img src="img/thumbnails/custom-pmtiles-thumb.png" class="card-img-top" 
+                            alt="custom pmtiles thumbnail">
+                        <div class="card-map-type">Custom Basemap | PMTiles, MapLibre</div>
+                        <div class="card-body">
+                            <h5 class="card-title">Custom PMTiles</h5>
+                            <p class="card-text">Created custom vector tiles from scratch and without dependencies using PMTiles and MapLibre.</p>
+                            <p class="card-attribution mb-0">For Graphic Design in Cartography Course</p>
+                            <a href="https://github.com/willmcallister/custom-pmtiles?tab=readme-ov-file#custom-pmtiles" class="stretched-link"></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-item col-xl-3 col-lg-4 col-md-6 col-sm-8 col-12">
+                    <div class="card">
                         <img src="img/thumbnails/streets-information-viewer-thumb.png" class="card-img-top" alt="streets information viewer thumbnail">
                         <div class="card-map-type">Interactive | Experience Builder</div>
                         <div class="card-body">
@@ -164,25 +198,13 @@
                     </div>
                 </div>
 
-                <div class="project-item col-xl-3 col-lg-4 col-md-6 col-sm-8 col-12">
-                    <div class="card">
-                        <img src="img/thumbnails/cip-dashboard-thumb.png" class="card-img-top" 
-                            alt="capital improvement project dashboard thumbnail">
-                        <div class="card-map-type">Interactive | ArcGIS Dashboard</div>
-                        <div class="card-body">
-                            <h5 class="card-title">Capital Improvement Projects Dashboard</h5>
-                            <p class="card-text">Rebuilt the City's CIP Dashboard to display taxpayer funded city projects.</p>
-                            <p class="card-attribution mb-0">For the City of Columbia, MO</p>
-                            <a href="#" class="stretched-link"></a>
-                        </div>
-                        <div class="card-coming-soon">Coming Soon!</div>
-                    </div>
-                </div>
             </div>
         </div>
         
         
         <!-- scripts -->
         <script type="text/javascript" src="js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="js/script.js"></script>
+
     </body>
 </html>

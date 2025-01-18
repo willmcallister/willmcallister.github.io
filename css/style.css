@@ -3,10 +3,24 @@
     src: url(/fonts/ObjectSans-Regular.otf);
 }
 
+[data-theme="light"] {
+    --color-bg: #ffffff;
+    --color-fg: #0D1118;
+    --color-card: 250, 250, 250;
+    --color-card-shadow: #c5c5c5;
+}
+  
+[data-theme="dark"] {
+    --color-bg: #000000;
+    --color-fg: #ffffff;
+    --color-card: 24, 24, 30;
+    --color-card-shadow: #000000;
+}
 
 body {
     font-family: "ObjectSans-Regular";
-    background-color: #F3F4F2;
+    background-color: var(--color-bg);
+    color: var(--color-fg)
 }
 
 .row {
@@ -26,7 +40,7 @@ body {
     font-family: mrs-eaves, serif;
     letter-spacing: 4px;
     font-size: 2.25rem;
-    color: #000;
+    color: var(--color-fg)
 }
 
 .navbar-brand:hover{
@@ -36,7 +50,7 @@ body {
 
 /* nav bar */
 .nav-link {
-    color: black;
+    color: var(--color-fg) !important
 }
 
 .nav-link:hover {
@@ -44,7 +58,6 @@ body {
 }
 
 .nav-tabs .nav-item .nav-link.active {
-    color: #3D3D3C;
     border-bottom: 4px solid #3D3D3C;
 }
 
@@ -53,6 +66,17 @@ body {
     color: #3D3D3C;
 }
 
+button {
+    padding: 0px;
+    margin: 0px;
+    background-color: transparent;
+    border: 0px;
+}
+
+.theme-selector {
+    width: 24px;
+    height: 24px;
+}
 
 
 /* Home Page Text */
@@ -84,8 +108,10 @@ body {
 }
 
 .card {
-    background-color: #FAFAFA;
-    
+    background-color: rgb(var(--color-card));
+    color: var(--color-fg);
+    filter: drop-shadow(-0.5px 0.5px 6px var(--color-card-shadow));
+    border: 0px;
 }
 
 .card:hover {
@@ -113,7 +139,8 @@ body {
     top: 0;
     right: 0;
     padding: 5px;
-    background-color: rgba(250, 250, 250, 0.9);
+    /*background-color: var(--color-card);*/
+    background-color: rgba(var(--color-card), 0.9);
     border: 1.5px dashed;
     border-radius: 0px 5px 0px 5px;
     border-color: gray;
