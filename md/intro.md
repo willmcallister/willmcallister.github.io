@@ -10,5 +10,3 @@ I'm a Junior studying *Cartography/GIS* and *Geography* at the *University of Wi
 ### Places you can find me 
 [Linkedin](https://www.linkedin.com/in/wlmcallister/)\
 [GitHub](https://github.com/willmcallister)
-
-Send me an email! [will.l.mcallister@gmail.com](mailto:will.l.mcallister@gmail.com)
